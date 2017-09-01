@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <title>Trip Builder API Client</title>
+</head>
+<body>
+  <div class="main_wrapper">
+    <div class="hero_area">
+      <div class="form_container">
+        <h1 class="textLabel">Select trip source and destination</h1>
+        <form id="trip_selecter">
+          <select id="fromAirport" name ="fromAirport">
+            <option value="null" selected="selected">From</option>
+          </select>
+            <select id="toAirport" name="toAirport">
+              <option value="null" selected="selected">To</option>
+            </select>
+            <input type="button" value="Add flight" id="add_flight_button" />
+            <input type="submit" value="Find Trips" id="submitButton" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="results_wrapper">
+      <div class="trips_list">
+
+      </div>
+    </div>
+</div>
+<div class="overlay" id="overlay">
+  <form id="add_flight">
+    <input type="text" placeholder="Flight name" id="flightName" name="flightName">
+    <input type="submit" value="Add flight">
+  </form>
+</div>
+</body>
+</html>
